@@ -1,11 +1,14 @@
 @charset 'utf-8';
+body {
+    width: 100%;
+}
+
 header, section {
-    padding: 0 5%;
+    padding: 0 5%
 }
 
 .cov19 {
-    width: 100vw;
-    height: 7vh;
+    width: 100%;
     background-color: black;
     font-size: 14px;
     text-align: center;
@@ -21,7 +24,8 @@ header, section {
 
 .header{
     background-color:black;
-    padding-top: 20px;
+    padding-top:20px;
+
 }
 
 .header .header_content{
@@ -44,7 +48,6 @@ header, section {
 
 .header .header_content .header_content_second {
     float: right;
-    width: 300px;
 }
 
 .header .header_content .header_content_second .host{
@@ -93,11 +96,9 @@ a .header_content_profile {
     position: relative;
     top: -20px;
     color: white;
+
 }
 
-.header .header_content_bar 
-.header_content_js {
-}
 
 .header .header_content_bar .header_content_js
 .center_bar .menuall {
@@ -113,36 +114,48 @@ a .header_content_profile {
 
 /* 두번째 작업 시작 */
 
-.header .header_content_bar .header_content_js 
+
 .header_content_data {
     text-align: center;
-    margin-top:20px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: black;
 }
 
-.header .header_content_bar .header_content_js 
+/* z-index 로 header_content_data::before 를 만들고,
+그 안에 똑같은 콘텐츠를 만드는데 z-index:-1로 뒤로 보내고,
+position : sticky 로 값을 주면 어떻게 될까? */ 
+
+
 .header_content_data .data_border {
+    margin: 0 auto;
+    width: 57%;
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 20px;
     border-radius: 50px;
     background-color:white;
     text-align:left;
 }
 
-.header .header_content_bar .header_content_js 
+
 .header_content_data span {
     display: inline-block;
     color: black;
 }
 
 
-.header .header_content_bar .header_content_js 
 .header_content_data .data_one {
     font-size: 12px;
     padding-right: 60px;
     border-right: lightgray 1px solid;
 }
 
-.header .header_content_bar .header_content_js 
+.header_content_data .lab_box {
+    display: block;
+    padding-left: 4px;
+}
+
 .header_content_data span .location {
     display: block;
     color: black;
@@ -150,40 +163,33 @@ a .header_content_profile {
     padding: 0 3px;
 }
 
-.header .header_content_bar .header_content_js 
 .header_content_data .data_border span input {
     border: white 1px solid;
 }
 
-.header .header_content_bar .header_content_js 
 .header_content_data .data_border .checked{
     border-right: lightgray 1px solid;
     padding: 0 10px ;
     font-size: 12px;
 }
 
-.header .header_content_bar .header_content_js 
 .header_content_data .data_border .last_menu {
     padding-left: 10px ;
     font-size: 12px;
 }
 
-.header .header_content_bar .header_content_js 
 .header_content_data .data_border .last_menu>.location{
     display: block;
 }
 
-.header .header_content_bar .header_content_js 
 .header_content_data .data_border .last_menu input{
     display: inline;
 }
 
-.header .header_content_bar .header_content_js 
 .header_content_data .data_border .last_menu .search_img {
     width: 20px;
 }
 
-.header .header_content_bar .header_content_js 
 .header_content_data .data_border .last_menu .search {
     display:inline-block;
     color: white;
@@ -193,7 +199,6 @@ a .header_content_profile {
     border-radius: 50px;
 }
 
-.header .header_content_bar .header_content_js 
 .header_content_data .data_border .last_menu .search span {
     font-size: 20px;
 }
@@ -201,15 +206,15 @@ a .header_content_profile {
 /* header 작업 완료 */
 
 .fir_section {
-    padding-top: 20px;
+    padding-top: 50px;
     background-color: black;
-    width: 100%;
+    width: 90%;
     height: 800px;
     text-align: center;
 }
 
 .fir_content{
-    width: 90%;
+    width: 100%;
     height: 700px;
     background-image: url(./img/Tent_2.jpg);   
     background-size: cover;
@@ -232,4 +237,211 @@ a .header_content_profile {
     font-weight: bold;
 }
 
+/* 첫번째 섹션 종료 두번째 시작 */
+
+.sec_sect {
+    padding: 100px 0;
+    width: 90%;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.sec_sect .sec_title {
+    font-size: 50px;
+    padding:0px 0 50px 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.sec_sect .sec_sect_content {
+    width: 100%;
+    text-align: left;
+}
+
+.sec_sect .sec_sect_content .sec_link {
+    display: inline-block;
+    width: 320px;
+    height: 400px;
+    margin-right: 15px;
+    text-decoration: none;
+
+    /* background-color:brown; */
+}
+
+.sec_sect .sec_sect_content .sec_link .sec_sect_text {
+    width: 310px;
+    height: 200px;
+    padding:20px 0 0 10px;
+    border-radius: 0 0 10% 10%;
+    background-color:lightcoral;
+    margin-top: -2px;
+    /* 사이 간격이 있음. */
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.sec_sect .sec_sect_content .sec_link .sec_sect_text h6 {
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.sec_sect_content .sec_sect_img {
+    width: 320px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10% 10% 0 0;
+}
+
+/* 두번째 섹션 작업끝 세번째 시작 */
+
+.thir_sect {
+    width: 90%;
+}
+
+.thir_title {
+    font-size: 50px;
+    padding:30px 0 30px 0%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.thir_fir_span {
+    display: inline-block;
+    width: 43vw;
+    height: 650px;
+    margin-right: 30px;
+    border-radius: 10px;
+    background-color:blueviolet;
+    background-image: url(./img/experier.jpg);
+    background-size: cover;
+}
+
+.thir_sec_span {
+    display: inline-block;
+    width: 43vw;
+    height: 650px;
+    border-radius: 10px;
+    background-color:aqua;
+    background-image: url(./img/rest.jpg);
+    background-size: cover;
+}
+
+.thir_third_div {
+    width: 100%;
+    height: 700px;
+    margin: 70px auto;
+    background-image: url(./img/host.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.thir_title_text {
+    font-size: 50px;
+    color: white;
+    padding: 50px 0 50px 30px;
+}
+
+section .thir_third_div .thir_title_text {
+    padding-left: 60px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.thir_btn {
+    margin-left: 40px;
+    border-radius: 10px;
+    border: none;
+    padding:10px 15px;
+    background-color:white;
+    font-size: 12px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.thir_btn:hover {
+    background-color: lightgray;
+}
+
+.last_btn {
+    margin:250px 0 0 70px;
+    cursor: pointer;
+}
+
+/* 세번째 섹션 끝 마지막 섹션 시작 */
+
+.about_bnb {
+    width: 90%;
+    background-color: lightgrey;
+}
+
+.about_bgc{
+    width: 100%;
+    margin: 50px 0px 100px 0px;
+    display: inline-block;
+}
+/* QnA - 전체 body에 한번더 감싸는 section 을 묶어서 거기에 padding 을 좌우로 주면 그 다음 레이아웃을 맞출 때 편하지 않을까..? */
+
+.about_bnb .about_bgc .low_level {
+    display: inline-block;
+    font-size: 15px;
+    padding:0px 150px 0 0px;
+    vertical-align:top;
+}
+
+.low_level h6 {
+    font-size: 12px;
+}
+
+.low_level_centent {
+    display: inline-block;
+}
+
+.low_level_centent li {
+    padding-top: 15px;
+    font-size: 12px;
+    color: black;
+}
+
+.low_level_centent li a {
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/* footer 작업 시작 */
+footer {
+    padding-bottom: 100px;
+}
+
+footer .footer {
+    padding-top: 20px;
+    font-size: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer .footer_fir {
+    display: inline-block;
+}
+
+.footer .footer_sec {
+    display: inline-block;
+}
+
+.korean {
+    /* margin-left: 54%; */
+}
+
+.footer_img {
+    width: 15px;
+    height: 15px;
+}
+
+.footer .footer_text {
+    display: inline-block;
+}
 
