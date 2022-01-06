@@ -3,6 +3,10 @@ body {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 header, section {
     padding: 0 5%
 }
@@ -118,8 +122,8 @@ a .header_content_profile {
 .header_content_data {
     text-align: center;
     width: 100%;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     background-color: black;
 }
 
@@ -281,7 +285,7 @@ position : sticky 로 값을 주면 어떻게 될까? */
     font-weight: bold;
 }
 
-.sec_sect .sec_sect_content .sec_link .sec_sect_text h6 {
+.sec_sect .sec_sect_content .sec_link .sec_sect_text h4 {
     padding-top: 20px;
     font-size: 15px;
     font-weight: 200;
@@ -370,78 +374,79 @@ section .thir_third_div .thir_title_text {
     cursor: pointer;
 }
 
-/* 세번째 섹션 끝 마지막 섹션 시작 */
+/* 세번째 섹션 끝 footer 작업 시작.*/
 
-.about_bnb {
-    width: 90%;
-    background-color: lightgrey;
-}
-
-.about_bgc{
-    width: 100%;
-    margin: 50px 0px 100px 0px;
-    display: inline-block;
-}
-/* QnA - 전체 body에 한번더 감싸는 section 을 묶어서 거기에 padding 을 좌우로 주면 그 다음 레이아웃을 맞출 때 편하지 않을까..? */
-
-.about_bnb .about_bgc .low_level {
-    display: inline-block;
-    font-size: 15px;
-    padding:0px 150px 0 0px;
-    vertical-align:top;
-}
-
-.low_level h6 {
-    font-size: 12px;
-}
-
-.low_level_centent {
-    display: inline-block;
-}
-
-.low_level_centent li {
-    padding-top: 15px;
-    font-size: 12px;
-    color: black;
-}
-
-.low_level_centent li a {
-    color: black;
-    text-decoration: none;
-    font-size: 10px;
-}
-
-/* footer 작업 시작 */
 footer {
-    padding-bottom: 100px;
+    background-color:lightgray;
+    width: 90%;
+    padding: 0 5%;
 }
 
-footer .footer {
-    padding-top: 20px;
-    font-size: 10px;
-    width: 90%;
-    display: flex;
+.fir_nav {
+    width: 100%;
+    padding:50px 0 50px 0 ;
+    border-bottom: 1px solid black;
+    color: black;
+    font-size:15px;
+
+}
+
+.nav_content {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 150px;
+}
+
+.nav_content h5 {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.nav_content ul li {
+    padding-bottom: 10px;
+}
+
+.nav_content ul li a {
+    color: black;
+    font-size: 12px;
+}
+/* footer 첫번째 nav 작업 종료  */
+
+.sec_nav {
+    /* padding: 20px 0; */
+    /* font-size: 15px;     */
+    display: flex; 
     justify-content: space-between;
 }
 
-footer .footer .footer_fir {
-    display: inline-block;
+.sec_nav .nav_last_fir {
+    font-size: 15px;
+    height: 70px;
+    line-height: 70px;
 }
 
-.footer .footer_sec {
-    display: inline-block;
+.fake::before {
+    content: '.';
+    font-size:15px;
+    font-weight: bold;
+    position:relative;
+    top:-4px;
+    margin-right:5px;
 }
 
-.korean {
-    /* margin-left: 54%; */
+.nav_last_sec {
+    height: 70px;
+    line-height: 70px;
 }
 
-.footer_img {
+.sec_nav a {
+    color: black;
+    font-weight: 200;
+}
+
+.nav_last_sec a img {
     width: 15px;
-    height: 15px;
 }
 
-.footer .footer_text {
-    display: inline-block;
-}
+
 
