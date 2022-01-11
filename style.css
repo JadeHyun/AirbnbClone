@@ -36,6 +36,8 @@ header, section {
     display: inline-block;
     width: 100%;
     clear: both;
+    position:sticky;
+    top:0
 }
 
 .header .header_content .header_content_logo {
@@ -207,7 +209,92 @@ position : sticky 로 값을 주면 어떻게 될까? */
     font-size: 20px;
 }
 
-/* header 작업 완료 */
+/* header 작업 완료, 상단 메뉴바 작업 시작. */
+
+.top_menu {
+    /* position: sticky; 
+    top:0;  */
+    /* padding: 20px 5%;
+    text-align: center;
+    transform: translateY(-10%); */
+    /* display: flex;
+    justify-content: space-between; */
+    /* background-color: #fff;
+    opacity: 1;
+    visibility: visible; */
+}
+
+.top_menu img {
+    width: 30px;
+}
+
+
+.top_main_link {
+    color: #FF385C;
+}
+
+.top_btn_box {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #fff;
+    background-color:rgb(255, 255, 255, 0.9);
+    box-shadow: 1px 1px gray;
+}
+
+.top_btn_box:hover {
+    background-color:rgba(255, 255, 255,0.1);
+    box-shadow: 1px 3px gray;
+
+}
+
+.top_search {
+    border: none;
+    font-size: 12px;
+    margin: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.top_btn_box .top_search_img {
+    width: 20px;
+    padding:3px;
+    margin: 5px 0 0 70px;
+    background-color: #FF385C;
+    border-radius: 30px;
+    float: right;
+}
+
+.top_right {
+    display: inline-block;
+    /* vertical-align: top; */
+}
+
+.layout {
+    padding-left:10px
+}
+
+.top_right .top_host {
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.test {
+    width: 20px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.top_right .top_earth {
+    width: 100%;
+}
+
+/* 메뉴바 작업 종료 , 첫번째 섹션 시작 */
 
 .fir_section {
     padding-top: 50px;
@@ -413,8 +500,6 @@ footer {
 /* footer 첫번째 nav 작업 종료  */
 
 .sec_nav {
-    /* padding: 20px 0; */
-    /* font-size: 15px;     */
     display: flex; 
     justify-content: space-between;
 }
@@ -447,6 +532,12 @@ footer {
 .nav_last_sec a img {
     width: 15px;
 }
+
+/* 마지막 아이콘 좌우로 배치하기.
+    1. 부모테그에 display:flex 와 justify-content:space-between 으로
+    자식태그가 좌우로 갈 수있게 해주었다. 
+    2. 줄이 맞지 않아서 부모태그에 높이를 주고, 자식태그도 부모태그의
+    높이와 같이 맞춰준 후 line-height로 같은 높이를 지정해주어서 높이를 맞췄다.*/
 
 
 

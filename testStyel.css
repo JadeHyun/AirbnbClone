@@ -1,0 +1,232 @@
+@charset 'utf-8';
+body {
+    width: 100%;
+    height: 2000px;
+    /* font-size: 20px; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+img {
+    width: 30px;
+}
+
+/* aside를 제외하고 다 묶는 섹션 */
+.main_body {
+    width: 80%;
+    padding:0 10%;
+    height: 1000px;
+    background-color: black;
+}
+
+.cov19 {
+    width: 100%;
+    background-color: black;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+
+.cov19 .aside_title .aside_title_content {
+    color: white;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+/* 상단 메뉴바 레이아웃 작업 시작 */
+
+/* 상단 메뉴바를 전체로 묶는 클래스 */
+.title_box {
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    text-align: center;
+    /* background-color: #fff; */
+    margin-top: 100px;
+    /* 삭제요망 */
+    background-color:turquoise;
+    z-index: ;
+}
+
+.title_box img {
+    width: 20px;
+}
+
+
+.title_logo {
+    float: left;
+    /* title_box ( 상단 메뉴를 감싸는 섹션 ) 에 텍스트 센터를 주고,
+    (센터를 준 이유는 검색버튼이 가운데 오기 위함.)
+    그리고 로고는 왼쪽으로 보내고, 프로필은 우측으로 보내기 위해
+    float 속성을 사용했다.  */
+}
+/* 위쪽은 로고레이아웃  */
+ 
+
+/* 상단 메뉴바 중간 검색버튼 */
+.search_box {
+    display: inline-block;
+    border-radius: 21px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    height: 33px;
+    width: 250px;
+    margin-left: 100px;
+}
+
+.search_text {
+    padding:0 80px 2px 4px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.search_box img {
+    width: 12px;
+}
+
+.search_box .search_box_img {
+    padding:5px;
+    border-radius: 21px;
+    transform: translateY(5px);
+    background-color: tomato;
+}
+/* 중간 검색 버튼 */
+
+/* 우측 프로필 버튼 */
+.title_bar {
+    float: right;
+}
+
+.host {
+    padding-right: 20px;
+}
+
+.header_content_earth {
+    margin-right: 20px;
+    border-radius: 21px;
+}
+
+.menu {
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 21px 21px 21px 21px;
+    background-color: #fff;
+    
+}
+
+.wid {
+    padding: 3px 4px;
+    border-radius: 21px;
+}
+/* 우측 프로필 버튼 */
+
+
+
+
+
+/* 고정된 상단 메뉴 작업 시작 */
+.header {
+    background-color: black;
+    text-align: center;
+}
+
+.header img {
+    width: 20px;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header_content_logo {
+
+}
+
+
+.header_content_input {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* .center_menu1 {
+    border-bottom: 1px solid white;
+} */
+/* 고정된 상단 메뉴 작업 종류, 밑에 input 박스 작업 시작. */
+
+.data_border {
+    margin: 10px auto;
+    font-size: 14px;
+    width: 56%;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color:white;
+    text-align:left;
+}
+
+.data_border .data_input {
+    display:inline-block;
+    padding:0 40px 0 5px;
+
+}
+
+.data_one {
+    border-right: lightgray 1px solid;
+}
+
+.data_input input {
+    width: 100px;
+    font-size: 6px;
+    margin-top: 5px;
+}
+
+
+.lab_box {
+    display: block;
+    
+}
+
+.last_menu {
+    padding-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.search_img {
+    float: right;
+    margin-top: 7px;
+    padding: 3px;
+    background-color: tomato;
+    border-radius: 21px;
+}
+
