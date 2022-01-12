@@ -1,8 +1,13 @@
 @charset 'utf-8';
+
+@media(min-height:100px){
+    #media{
+        z-index: 11;
+    }
+}
+
 body {
     width: 100%;
-    height: 2000px;
-    /* font-size: 20px; */
 }
 
 a {
@@ -19,7 +24,6 @@ img {
 .main_body {
     width: 80%;
     padding:0 10%;
-    height: 1000px;
     background-color: black;
 }
 
@@ -42,15 +46,16 @@ img {
 
 /* 상단 메뉴바를 전체로 묶는 클래스 */
 .title_box {
-    position: sticky;
-    top: 0;
     padding-top: 10px;
     text-align: center;
-    /* background-color: #fff; */
-    margin-top: 100px;
-    /* 삭제요망 */
-    background-color:turquoise;
-    z-index: ;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+
+#media {
+    z-index: -1;
 }
 
 .title_box img {
@@ -60,6 +65,7 @@ img {
 
 .title_logo {
     float: left;
+    color: black;
     /* title_box ( 상단 메뉴를 감싸는 섹션 ) 에 텍스트 센터를 주고,
     (센터를 준 이유는 검색버튼이 가운데 오기 위함.)
     그리고 로고는 왼쪽으로 보내고, 프로필은 우측으로 보내기 위해
@@ -72,12 +78,12 @@ img {
 .search_box {
     display: inline-block;
     border-radius: 21px;
-    background-color: #fff;
-    border: none;
+    background-color: rgba(255, 255, 255, 0.267);
+    border: 1px solid gray;
     cursor: pointer;
     height: 33px;
     width: 250px;
-    margin-left: 100px;
+    margin:0 0 10px 100px;
 }
 
 .search_text {
@@ -105,6 +111,10 @@ img {
 
 .host {
     padding-right: 20px;
+}
+
+.header_content_second a {
+    color: black;
 }
 
 .header_content_earth {
@@ -153,6 +163,15 @@ img {
 
 .header_content_input {
     color: white;
+    text-align: center;
+    transform: translateY(-130%);
+}
+
+.input_content span {
+    padding-right: 5px;
+}
+
+.under_line {
     border-bottom: 1px solid white;
 }
 
@@ -160,6 +179,12 @@ img {
     border-bottom: 1px solid white;
 } */
 /* 고정된 상단 메뉴 작업 종류, 밑에 input 박스 작업 시작. */
+
+.header_content_data {
+    width: 100%;
+    text-align: center;
+    transform: translateY(-70%);
+}
 
 .data_border {
     margin: 10px auto;
@@ -175,17 +200,20 @@ img {
 .data_border .data_input {
     display:inline-block;
     padding:0 40px 0 5px;
-
 }
 
-.data_one {
+/* .data_one {
     border-right: lightgray 1px solid;
-}
+} */
 
 .data_input input {
     width: 100px;
     font-size: 6px;
     margin-top: 5px;
+}
+
+.data_input {
+    border-right: lightgray 1px solid;
 }
 
 
@@ -196,37 +224,287 @@ img {
 
 .last_menu {
     padding-right: 0px;
+    border:none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .search_img {
     float: right;
-    margin-top: 7px;
+    margin-top: 0px;
     padding: 3px;
     background-color: tomato;
     border-radius: 21px;
+}
+
+/* 첫번째 콘텐츠 섹션 시작 */
+
+.fir_section {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: 800px;
+    padding: 0 0 50px 0;
+}
+
+.fir_content{
+    background-image: url(./img/Tent_2.jpg);   
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    border-radius: 50px;
+}
+
+.fir_content .sentence{
+    transform: translateY(350%);
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    display: block;
+}
+
+.fir_content_search{
+    display: inline-block;
+    width: 200px;
+    background-color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #FF385C ;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 7px;
+    margin: 5px;
+}
+
+/* 두번째 콘텐츠 섹션 시작 */
+
+.main_sec_body {
+    width: 80%;
+    padding:0 10%;
+    /* text 와 img 사이에 간격이 있는데 body 에 line-height가 있었음.
+    그래서 해당 섹션의 제일 상위 부모에게 따로 속성을 먹임. */
+}
+
+
+.sec_sect {
+    width: 100%;
+    padding: 50px 0 ;
+    line-height: 0;
+
+}
+
+.sec_sect .sec_title {
+    font-size: 50px;
+    padding:0px 0 50px 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.sec_sect .sec_sect_content {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec_sect .sec_sect_content .sec_link {
+    display: inline-block;
+    width: 24%;
+    height: 400px;
+    text-decoration: none;
+}
+
+/* 마지막 콘텐츠의 margin-right 때문에 오른쪽 끝선에 맞출 수 없어서 
+따로 속성을 줌. */
+.sec_sect .sec_sect_content .sec_link_last {
+    display: inline-block;
+    width: 23%;
+    height: 400px;
+    text-decoration: none;
+}
+
+.sec_sect_content .sec_sect_img {
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10% 10% 0 0;
+}
+
+
+.sec_sect_text {
+    width: 100%;
+    height: 200px;
+    border-radius: 0 0 10% 10%;
+    background-color:lightcoral;
+}
+
+
+.text_layout {
+    display: inline-block;
+    font-size: 30px;
+    margin:40px 0 0 10px;
+    font-weight: bold;
+}
+
+.far {
+    display: block;
+    font-size: 16px;
+    margin: 30px 0 0 10px;
+}
+
+/* 두번째 섹션 작엽 완료, 세번째 섹션 시작. */
+.thir_sect {
+    width: 100%;
+}
+
+.thir_title {
+    font-size: 50px;
+    padding:30px 0 30px 0%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.thir_sect_layout {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.thir_fir_span {
+    background-image: url(./img/experier.jpg);
+}
+
+.thir_span_same {
+    display: inline-block;
+    width: 49%;
+    height: 650px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.thir_sec_span {
+    background-image: url(./img/rest.jpg);
+}
+
+.thir_third_div {
+    width: 100%;
+    height: 700px;
+    margin: 70px auto;
+    background-image: url(./img/host.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.thir_title_text {
+    font-size: 50px;
+    color: white;
+    padding: 50px 0 50px 30px;
+}
+
+section .thir_third_div .thir_title_text {
+    padding-left: 60px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.thir_btn {
+    margin-left: 40px;
+    border-radius: 10px;
+    border: none;
+    padding:10px 15px;
+    background-color:white;
+    font-size: 12px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.thir_btn:hover {
+    background-color: lightgray;
+}
+
+.last_btn {
+    margin:250px 0 0 70px;
+    cursor: pointer;
+}
+
+/* 세번째 섹션 작업 끝, 마지막 footer 작업 시작. */
+
+footer {
+    background-color:lightgray;
+    /* width: 100%; */
+}
+
+.fir_nav {
+    width: 80%;
+    padding:50px 10% ;
+    color: black;
+    font-size:15px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.nav_content {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 150px;
+}
+
+.nav_content h5 {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.nav_content ul li {
+    padding-bottom: 10px;
+}
+
+.nav_content ul li a {
+    color: black;
+    font-size: 12px;
+}
+
+/* 상단 nav 작업 종료, 하단 출처 작업 시작 */
+
+.sec_nav {
+    width: 80%;
+    padding: 10px 10%;
+}
+
+.sec_nav_layout {
+    width: 100%;
+    border-top: 1px solid black;
+    display: flex; 
+    justify-content: space-between;
+
+}
+
+.sec_nav .nav_last_fir {
+    font-size: 15px;
+    height: 70px;
+    line-height: 70px;
+}
+
+.fake::before {
+    content: '.';
+    font-size:15px;
+    font-weight: bold;
+    position:relative;
+    top:-4px;
+    margin-right:5px;
+}
+
+.nav_last_sec {
+    height: 70px;
+    line-height: 70px;
+}
+
+.sec_nav a {
+    color: black;
+    font-weight: 200;
+}
+
+.nav_last_sec a img {
+    width: 15px;
 }
 
