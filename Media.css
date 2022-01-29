@@ -1,0 +1,38 @@
+@charset 'utf-8';
+
+@media screen and (max-width:900px) {
+    
+
+    .nav_content {
+        display: block;
+    }
+
+    .media_li {
+        width: 100%;
+        display: inline-block;
+        border-bottom: 1px solid black;
+    }
+}
+
+
+@media screen and  ( max-width: 1000px ) {
+    .fir_section {
+        width: 100%;
+        background-image: url(./img/Tent_2.jpg);
+    }
+}
+
+
+@media screen and  ( max-width:1100px) {
+    .thir_third_div {
+        display: none; 
+    }
+    .media_fir {
+        display: block;
+    }
+}
+
+
+
+
+
