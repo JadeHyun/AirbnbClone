@@ -501,6 +501,7 @@ footer {
 .nav_content ul li a {
     color: black;
     font-size: 0.8rem;
+    
 }
 
 /* 상단 nav 작업 종료, 하단 출처 작업 시작 */
@@ -553,6 +554,7 @@ footer {
     .nav_content {
         display: block;
         width: 100%;
+        
     }
 
     .media_li {
