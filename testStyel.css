@@ -550,6 +550,15 @@ footer {
 
 /* 미디어 쿼리 시작 */
 
+@media (max-width:700px) {
+    .media_fir {
+        background-image: url(./img/rest.jpg);
+        background-size: cover;
+        display: block;
+        width: 100%;
+    }
+}
+
 @media (max-width:900px) {
     .nav_content {
         display: block;
@@ -590,4 +599,13 @@ footer {
     .media_fir {
         display: block;
     }
-};
+}
+
+@media (max-width:1400px) {
+    .thir_third_div {
+        background-image: url(./img/experier.jpg);
+        background-size: cover;
+        width: 100%;
+    }
+}
+
