@@ -499,6 +499,10 @@ footer {
   line-height: 70px;
 }
 
+.fake {
+  width: 100%;
+}
+
 .fake::before {
   content: ".";
   font-size: 15px;
@@ -511,6 +515,7 @@ footer {
 .nav_last_sec {
   height: 70px;
   line-height: 70px;
+  font-size: 0.7rem;
 }
 
 .sec_nav a {
@@ -530,6 +535,10 @@ footer {
     background-size: cover;
     display: block;
     width: 100%;
+  }
+
+  .footer_text {
+    display: block;
   }
 }
 
