@@ -540,6 +540,15 @@ footer {
   .footer_text {
     display: block;
   }
+
+  .nav_last_fir {
+    display: block;
+  }
+
+  .nav_last_sec {
+    width: 100%;
+    display: block;
+  }
 }
 
 @media (max-width: 900px) {
